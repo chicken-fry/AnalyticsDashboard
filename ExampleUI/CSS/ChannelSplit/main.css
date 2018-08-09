@@ -1,0 +1,221 @@
+*{
+    outline:0;
+}
+:after, :before {
+    box-sizing: inherit;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:EK03Plain-M01;
+    background: white !important;
+}
+#mainTable{
+    width:100%;
+}
+.wrapper{
+    width:97%;
+    margin:0 auto;
+}
+.header{
+    height:100%;
+    display: table;
+    width: 100%;
+}
+.brand-name{
+    width:65px;
+    height: 90px;
+    float: left;
+    background-image: url("../../images/logo.png");
+}
+.app-name{
+    font-size:2.5em;
+    color:#333333;
+    float: left;
+    margin:20px 0 0 20px;
+}
+.active-users{
+    float: right;
+    text-align: right;
+    margin:15px 20px 0 20px;
+}
+.users{
+    font-family:Arial;
+    font-size:3em;
+    color:#333;
+    font-weight:bold;
+}
+.users-label{
+    font-size:.8em;
+    color:#666;
+    font-family:Roboto, arial;
+}
+.percentage-statistics-wrapper{
+    width:97%;
+    padding:1%;
+    height:20px;
+    float: right;
+    background: #f7f7f7;
+    margin:10px 8px 75px 0;
+    border:1px solid #c5c5c5;
+}
+.percentage-holder{
+    width:100%;
+    height:100%;
+}
+.percentage{
+    height:20px;
+    float: left;
+    position: relative;
+}
+.label-display{
+    position: absolute;
+    bottom: -85px;
+    left: 40%;
+    text-align: center;
+}
+.percentage-label{
+    font-size:2.0em;
+    font-family:Roboto, arial;
+    font-weight:bold;
+    color:#4293a9;
+}
+.mobile-web-user-percent{
+    color:#40af66;
+}
+.mobile-user-percent{
+    color:#e74f62;
+}
+.ipad-user-percent{
+    color:#90928b;
+}
+.iphone-user-percent{
+    color:#e6774d;
+}
+.andriod-user-percent{
+    color:#74b32e;
+    /*color:#939937;*/
+    
+}
+.label-web{
+    font-family:arial;
+    font-size:1em;
+    white-space: nowrap;
+}
+.label-web1{
+    font-family:arial;
+    font-size:1em;
+    white-space: nowrap;
+}
+.counts-holder{
+    width:100%;
+    min-height:200px;
+    height:auto;
+    float: left;
+    margin-top:5px;
+}
+
+.active-users-table{
+    float: left;
+    min-height:520px;
+    width:25%;
+}
+.table-header{
+    padding:15px 0;
+    text-align: center;
+    mmin-height: 104px;
+}
+
+.table-header i{
+    margin-right:5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.desktop{
+    background:#53a7bf;
+}
+.mobile-web{
+    background:#53bf79;
+}
+.ipad{
+    background:#90928b;
+}
+.android{
+    background:#74b32e;
+    /*#939937*/
+}
+.iphone{
+    background:#e6774d;
+}
+.device{
+    color:#fff;
+    font-size: 2em;
+}
+.device-users-count{
+    font-size: 3.5em;
+    color:#fff;
+    font-family:arial;
+}
+
+.bold{
+    font-weight:bold;
+}
+.header-bg{
+    background: #dbdbdb;
+    /*border-right:1px solid #dfdfdf;*/
+}
+.table-content{
+    width: 99.3%;
+    background: #f5f5f5;
+    border:solid #dfdfdf;
+    border-width:1px;
+}
+.table-shadow{
+    width: 99.3%;
+    height:13px;
+    background-image: url(../../images/shadow.png);
+    background-repeat:no-repeat;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+.counts-holder ul{
+    list-style: none;
+    font-family:arial;
+    padding:0;
+    margin:0;
+    width:100%;
+    font-size:.8em;
+    color:#393939;
+    font-weight:bold;
+}
+.counts-holder li:first-child{
+    display: inline-block;
+    padding: 10px 3%;
+    width:54%;
+    text-align: left;
+}
+.counts-holder li:nth-child(2){
+    display: inline-block;
+    padding: 10px 2%;
+    width:34%;
+    text-align: right;
+}
+.users-count{
+    float: left;
+    margin-left:1.2em;
+}
+.active-users-content{
+    width: 100%;
+    background: #f5f5f5;
+    border:solid #dfdfdf;
+    border-width:0px;
+    /*width:100%;
+    float: left;*/
+   
+}
+
+@media (min-width: 800px) and (max-width: 1100px){
+    .counts-holder li:first-child{
+        width: 52%;
+    }
+}

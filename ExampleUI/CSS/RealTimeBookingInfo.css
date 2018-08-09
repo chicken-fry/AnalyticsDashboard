@@ -1,0 +1,229 @@
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: EK03Plain-M01;
+    background: white !important;
+}
+
+.marker-img{
+    max-height:10px;
+    max-width:10px;
+}
+.chartdiv-collapse {
+    width: 100%;
+    height: 400px;
+}
+
+.chartdiv-expand {
+    /*position: absolute;*/
+    width: 98%;
+    height: 98%;
+}
+
+.tdChart-collapse {
+    width: 65%;
+    height: 50%;
+    position: relative;
+}
+
+.tdChart-expand {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.map-marker {
+    /* adjusting for the marker dimensions
+        so that it is centered on coordinates */
+    margin-left: -13px;
+    margin-top: -20px;
+}
+
+    .map-marker.map-clickable {
+        cursor: pointer;
+    }
+
+    /*.pulse {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #f7f14c;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #716f42;
+    z-index: 10;
+    position: absolute;
+}*/
+
+    .map-marker .dot {
+        border: 0px solid #fff601;
+        background: transparent;
+        /*-webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;*/
+        /*height: 20px;
+        width: 20px;*/
+        -webkit-animation: 3s ease-out;
+        -moz-animation: 3s ease-out;
+        animation: 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        /*animation-iteration-count: infinite;
+    /*animation-iteration-count: 5;*/
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        z-index: 1;
+        opacity: 1;
+    }
+
+/*@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(0);
+        opacity: 0.0;
+    }
+
+    25% {
+        -moz-transform: scale(0);
+        opacity: 0.1;
+    }
+
+    50% {
+        -moz-transform: scale(0.1);
+        opacity: 0.3;
+    }
+
+    75% {
+        -moz-transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+
+    25% {
+        -webkit-transform: scale(0);
+        opacity: 0.1;
+    }
+
+    50% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.3;
+    }
+
+    75% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.0;
+    }
+}*/
+
+th {
+    text-align: center;
+    color: white;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+}
+
+.sky-blue {
+    background-color: #9BC2E6;
+}
+
+.green {
+    background-color: #92D050;
+}
+
+.orange {
+    background-color: #FF9900;
+}
+
+.light-green {
+    background-color: #53BF79;
+}
+
+#dataPeriod th {
+    background-color: #9BC2E6;
+}
+
+.first-row {
+    background-color: #EDEDED;
+    height: 20px;
+}
+
+tr {
+    text-align: right;
+}
+
+body {
+    font-family: Calibri;
+}
+
+.aleft {
+    text-align: left;
+}
+
+.chalk {
+    background-color: #3f3e3b;
+    color: #fff;
+}
+
+.dark {
+    background-color: #30303d;
+    color: #fff;
+}
+
+.black {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.wrapper1 {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.brand-name {
+    width: 65px;
+    height: 90px;
+    float: left;
+    background-image: url("../../images/logo.png");
+}
+
+.app-name {
+    font-size: 2.5em;
+    color: #333333;
+    float: left;
+    margin: 20px 0 0 20px;
+}
+
+.data-header {
+    background: #53a7bf;
+    color: #fff;
+}

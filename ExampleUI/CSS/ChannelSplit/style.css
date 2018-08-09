@@ -1,0 +1,190 @@
+#mainTable {
+	width: 100%;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	overflow: hidden;
+	margin: 0;
+	background: white !important;
+}
+
+.mainDiv {
+	/*background: #9a040b;*/
+	font-family: EK03Plain-M01;
+	width: 100%;
+	padding-top: 5%;
+}
+
+.header {
+	text-align: center;
+	width: 100%;
+	font-size: 2em;
+	font-weight: bold;
+	color: #545454;
+	clear: both;
+	height: 10%;
+}
+
+.data {
+	width: 99.5%;
+	padding-top: 10px;
+	height: 90%;
+	/*background: #9a040b;*/
+	float: left;
+	padding-left: 0.5%;
+}
+
+.statistics {
+	/* height: auto; */
+	text-align: center;
+	margin-left: 0.5%;
+	margin-bottom: 10px;
+	width: 19.5%;
+	float: left;
+}
+
+.first {
+	margin-left: 0%;
+}
+
+.statisticsHeader {
+	height: auto;
+}
+
+.headingDesktop {
+	color: #004f7c;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.headingMobileWeb {
+	color: #e75c00;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.headingApple {
+	color: #434343;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.headingAndroid {
+	color: #5cb505;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.icon {
+	align-items: center;
+	/*width: 50px;*/
+	height: 50px;
+	width: 50px;
+	padding-top: 10px;
+}
+
+.figure {
+	color: #545454;
+	font-size: 4em;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.active {
+	color: #545454;
+	font-family: Arial;
+	font-size: 1.25em;
+}
+
+.statsTable {
+	width: 100%;
+	color: #545454;
+	/*padding-top: 5px;*/
+	background: #ededed;
+}
+
+	.statsTable table {
+		width: 100%;
+		border: none;
+		font-family: Arial;
+	}
+
+		.statsTable table tr {
+			height: 2em;
+			font-size: 0.8em;
+		}
+
+			.statsTable table tr:first-child {
+				background: #dcdcdc;
+				font-weight: bold;
+				height: 2.5em;
+			}
+
+			.statsTable table tr td:first-child {
+				width: 70%;
+				text-align: left;
+				padding-left: 2%;
+				padding-top: 2%;
+			}
+
+			.statsTable table tr td:nth-last-child(2), .statsTable table tr td:nth-last-child(1) {
+				width: 15%;
+				text-align: right;
+				padding-right: 5%;
+				padding-top: 2%;
+			}
+
+			.statsTable table tr td:nth-last-child(2) {
+				font-weight: bold;
+			}
+/*.tableHead {
+    height: 2.5em;
+}*/
+
+/*thead tr {
+    background: #dcdcdc;
+    font-weight: bold;
+    height: 2.5em;
+}*/
+
+
+
+/*.col1 {
+    width: 68%;
+    text-align: left;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.col2, .col3 {
+    width: 15%;
+    text-align: right;
+    padding-right: 2%;
+    padding-top: 2%;
+}*/
+
+.bold {
+	font-weight: bold;
+}
+
+
+/*For logo*/
+.logo {
+	float: right;
+	height: auto;
+}
+
+	.logo img {
+		width: 70%;
+		height: auto;
+		float: right;
+		margin-right: 5%;
+	}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+</body>
+<head>
+    <!-- Resources -->
+    <title>Paid Seat Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <script src="Script/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+
+        var uagent = navigator.userAgent.toLowerCase();
+        if (uagent.search("ipad") < 0 &&  screen.width > 768) {
+            $('body').load('Desktop.html');
+        }
+        else {
+            $('body').load('Mobile.html');
+        }
+    </script>
+    <script src="Script/amcharts.js"></script>
+    <script src="Script/serial.js"></script>
+    <script src="Script/ammap.js"></script>
+    <script src="Script/worldLow.js"></script>
+    <script src="Script/export.min.js"></script>
+    <link rel="stylesheet" href="CSS/export.css" type="text/css" media="all" />
+    <script src="Script/Service.js"></script>
+    <script src="Script/CommonFunctions.js"></script>
+    <script type="text/javascript">
+        var uagent = navigator.userAgent.toLowerCase();
+        if (uagent.search("ipad") < 0 && screen.width > 768) {
+            console.log('Hello bigscreen' + uagent );
+            var link = document.createElement('link');
+            link.type = 'text/css';
+            link.rel = 'stylesheet';
+            link.href = 'CSS/RealTimeBookingDetails.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+            (function () {
+                var randomh = Math.random();
+                var e = document.getElementsByTagName("script")[0];
+                var d = document.createElement("script");
+                d.src = "Script/RealTimeBookingDetails.js?x=" + randomh + "";
+                d.type = "text/javascript";
+                d.async = true;
+                d.defer = true;
+                e.parentNode.insertBefore(d, e);
+            })();
+        }
+        else {
+            console.log('Hello smallscreen');
+            var link = document.createElement('link');
+            link.type = 'text/css';
+            link.rel = 'stylesheet';
+            link.href = 'CSS/SmartPSPD.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+            (function () {
+                var randomh = Math.random();
+                var e = document.getElementsByTagName("script")[0];
+                var d = document.createElement("script");
+                d.src = "Script/SmartPSPD.js?x=" + randomh + "";
+                d.type = "text/javascript";
+                d.async = true;
+                d.defer = true;
+                e.parentNode.insertBefore(d, e);
+            })();
+        }
+    </script>
+</head>
+
+</html>

@@ -1,0 +1,607 @@
+body {
+    margin: 0px;
+    left: 0px;
+    width :100%;
+    background-color: #EFEFEF;
+  }
+  
+  html {
+    width: 100%; /*// The height of your html document takes 100% size of window*/
+   }
+  .default-left-margin
+  {
+      margin-left:15px !important;
+  }
+  .bigscreen{
+      display:none;
+      height:0px;
+  }
+
+   .wrapper {
+          display: grid;
+          grid-gap: 6px;
+          grid-template-areas:  "titleA"                               
+                                "summaryA"
+                                "mapA"
+                                "toposA"                                
+                                "seatA"
+                                "brandA"
+                                "channelA"
+                                "haulA"
+                                "memberA"
+                                "tmonthA";
+          grid-template-columns:  1fr;
+          grid-template-rows:  40px 90px 200px 126px 340px 293px 243px 193px 90px 90px;
+          background-color: #EFEFEF;
+          padding-left:4px;
+          padding-right:4px;
+      }
+
+    .mainDiv {
+          border-radius: 4px;
+          background-color: white;
+    }
+
+    .TitleBarC{
+         grid-area: titleA;
+         background-color: #333333 ;
+         border-radius:0px;
+         margin:0px -4px 2px -4px;
+    }
+    .SummaryC{
+         grid-area: summaryA;
+         background-color: white ;
+         border-radius:0px;
+    }
+    .MapC{
+         grid-area: mapA;
+         background-color: #F7F7F7; 
+         border-radius:0px;
+    }
+    .TopPosC{
+         grid-area: toposA;
+
+                 flex: 1;
+        display: flex;
+        overflow: auto;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+         border-radius:0px;
+
+    }
+
+.posContent::-webkit-scrollbar{
+    display:none;
+
+}
+
+    .posCaption{
+           font-family: Segoe UI, Semibold;
+            font-size: 14px;
+            color: #666666;
+        margin-top:10px;
+        /*margin-left:30px;*/
+        width:100px;
+        height:15px;
+
+    }
+.map-marker {
+    margin-top: -20px;
+    margin-left: -5px;
+}
+    .SeatC{
+         grid-area: seatA;
+
+    }
+    .BrandC{
+         grid-area: brandA;
+    }
+    .ChannelC{
+         grid-area: channelA;
+    }
+    .HaulC{
+         grid-area: haulA;
+    }
+    .MemberC{
+         grid-area: memberA;
+    }
+    .TMonthC{
+         grid-area: tmonthA;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+
+    .posContent{
+        flex: 1;
+        display: flex;
+        overflow: auto;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        margin-left:-100px;
+    }
+
+    .posBox {
+        min-height:-webkit-min-content; /* needs vendor prefixes */
+        display: flex;
+    }
+
+.posData {
+
+}
+
+.posItem {
+    margin-top:30px ;
+    margin-bottom:20px;
+    margin-right:15px;
+    margin-left:0px;
+    width:108px;
+    height: 75px;
+    border-right:solid 0.5px #EFEFEF;
+    /*border-right:solid 0.5px #EFEFEF;*/
+}
+    .NofN{
+        text-align:left;
+        font-family: Segoe UI, Normal;
+        font-size: 12px;
+        color: #999999;
+    }
+
+    .posSeat{
+        padding-left:10px;
+        text-align:left;
+        margin-left:30px;
+        font-family: Segoe UI, Bold;
+        font-size: 24px;
+        color:  #333333;
+    }
+
+    .posRevenue{
+        margin-top:3px;
+        text-align:left;
+        font-family: Segoe UI, Semibold;
+        font-size: 14px;
+        color: #999999;
+    }
+
+    .flagImg{
+        margin-top:5px;
+        background-repeat: no-repeat;
+        width:34px;
+        height:25.5px;
+        float: left;
+    }
+
+    .marginC{
+         margin: 10px 20px 0px 0px;
+            }
+
+    .CLogo {
+        height: 40px;
+        width: 100px;
+        float: left;
+        background-image: url("../Images/logo1.svg");
+        position: relative;
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+    .CName {
+        font-family: Emirates Medium;
+        font-size: 18px;
+        color: #ffffff;
+        float: left;
+        padding-left: 15px;
+        position: relative;
+        line-height:40px;
+        text-align:center;
+    }
+
+    #mchartdiv {
+    width: 94%;
+    height: 100%;
+}
+
+.tmonthTitle{
+   /*margin-left:25px;*/
+   margin-top:10px;
+
+}
+   /*.travelmonth {
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    float: right;
+    }*/
+
+    .travelmonth-chart {
+    width: 97%;
+    height: 60px;
+    /*margin-left: 5px;*/
+    }
+
+   .dataTitle{
+        padding-bottom:5px;
+        font-family: Segoe UI, Normal;
+        font-size: 14px;
+        color: #333333;
+    }    
+    .bar{
+        /*padding-bottom:20px;*/
+    }
+ 
+
+    .tableData{
+        position:relative;
+    }
+
+.short{
+    width:15px;
+    height:15px;
+    background-image: url("../Images/short-haul.svg");
+    background-repeat:no-repeat;
+}
+
+.medium{
+    width:15px;
+    height:15px;
+    background-image: url("../Images/medium-haul.svg");
+    background-repeat:no-repeat;
+}
+
+.long{
+    width:15px;
+    height:15px;
+    background-image: url("../Images/long-haul.svg");
+        background-repeat:no-repeat;
+}
+
+
+.web{
+    width:15px;
+    height:15px;
+    background-image: url("../Images/web.svg");
+        background-repeat:no-repeat;
+}
+
+.mobile{
+    width:15px;
+    height:15px;
+    background-image: url("../Images/mobile.svg");
+        background-repeat:no-repeat;    
+
+
+}
+
+.iphone{
+    width:15px;
+    height:15px;
+    background-image: url("../Images/iphone.svg");
+        background-repeat:no-repeat;
+}
+
+.android{
+    width:15px;
+    height:15px;
+    background-image: url("../Images/android.svg");
+        background-repeat:no-repeat;
+}
+
+
+.special {
+    width: 10px;
+    height: 10px;
+    background: #46CEE2;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.saver {
+    width: 10px;
+    height: 10px;
+    background: #00A9F7;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.flex {
+    width: 10px;
+    height: 10px;
+    background: #FDBC00;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.flex-plus {
+    width: 10px;
+    height: 10px;
+    background: #F74937;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.group {
+    width: 10px;
+    height: 10px;
+    background: #00C60F;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+
+.regular {
+    width: 10px;
+    height: 10px;
+    background: #46CEE2;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.preferred-lower {
+    width: 10px;
+    height: 10px;
+    background: #00A9F7;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.preferred-upper {
+    width: 10px;
+    height: 10px;
+    background: #3852B7;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.exit-row {
+    width: 10px;
+    height: 10px;
+    background: #00C60F;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.twin-lower {
+    width: 10px;
+    height: 10px;
+    background: #FDBC00;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.twin-upper {
+    width: 10px;
+    height: 10px;
+    background: #F74937;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.dataRow{
+        font-family: Segoe UI, Normal;
+        font-size: 14px;
+        color: #333333;
+        padding-top:10px;
+        height : 30px;
+        border-top:solid 0.5px #F7F7F7; 
+    }
+
+
+.rowImgContainer{
+    float:left;
+    width:7.5%;
+}
+
+.rowImg{
+    margin:5px 5px 5px 0px;
+}
+
+.rowName{
+    float:left;
+    width:20%;
+    text-align:left;
+}
+
+.rowSeatRevenue
+{
+    float:left;
+    width: 32.5%;
+    /*text-align:left;*/
+    padding-left:20px
+}
+.rowSeat{
+    float:left;
+    width: 100%;
+    text-align:left;
+    padding-left:20px;
+
+}
+.rowRevenue{
+    float:left;
+    width: 100%;
+    text-align:left;
+    padding-left:20px;
+    font-family: Segoe UI, Semibold;
+    font-size: 14px;
+    color: #999999;
+}
+.rowSeatRevenuePercent
+{
+     float:right;
+    width:32%;
+    /*text-align:right;*/
+}
+.rowSeatPercent
+{
+    float:right;
+    width:100%;
+    text-align:right;
+}
+.rowRevenuePercent
+{
+    float:right;
+    width:100%;
+    text-align:right;
+    font-family: Segoe UI, Semibold;
+    font-size: 14px;
+    color: #999999;
+}
+.hide{
+    display:none;
+}
+
+.temp>div{
+    display:none;
+}
+/* Sumary Section copied
+*/
+/*.today {
+        width: 100%;
+        height: 13%;
+        float: right;
+        font-family: Segoe UI, Semibold;
+        border-radius: 0px;
+        margin-bottom: 4px;
+    }*/
+
+.summary-background {
+    width: 99%;
+    height: 100%;
+    float: right;
+    margin-right: 2px;
+    font-family: Segoe UI, Semibold;
+    margin-bottom: 4px;
+}
+
+.mtoday .summary {
+      width: 90%;
+    float: left;
+    /*margin-left: 15px;*/
+    /*margin-top: 15px;*/
+    margin-right: 15px;
+    line-height:14px
+}
+
+.summary .current-day {
+    margin-top: 10px;
+    font-family: Segoe UI, Semibold;
+    font-size: 14px;
+    color: #999999;
+    float:left;
+}
+.todayinfo2
+{
+        margin-top:0px;
+    /*margin-left: 15px;*/
+    float:left;
+    width:32%;
+
+   
+}
+.today-trend .mtodayseat {
+    margin-top:-10px;
+    font-family: Segoe UI, Bold;
+    font-size: 32px;
+    color: black;
+    font-weight:500;
+}
+
+.today-trend .mpaidseatrevenue {
+    font-size: 14px;
+    color: #999999;
+}
+.today-trend .trend
+{
+        float: right;
+}
+.trend-number
+{
+    float:left;
+}
+.today-trend {
+    width: 100%;
+    height: 93%;
+    float: right;
+    font-family: Segoe UI, Normal;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+    .summary .trend .trend-indicator {
+        float: right;
+        color: #FFFFFF;
+        margin-left: 5px;
+    }
+
+    .summary .trend {
+        color: #FFFFFF;
+    }
+
+    .today-trend #mchartToday {
+        width: 63%;
+        height: 65px;
+        margin-right: 15px;
+    }
+.memberDiv {
+    font-family: Segoe UI, Normal;
+    font-size: 14px;
+    float: left;
+    width: 48%;
+    height: 70px;
+    color: #666666;
+
+}
+
+
+.skyseat,.skyrevenu{
+        font-family: Segoe UI, Normal;
+        font-size: 14px;
+       
+}
+.skyseat {
+    width: 60%;
+    float: left;
+     color: #333333;
+}
+.nonsky{
+    float:right;
+}
+.skyrevenue
+{
+    width: 75%;
+    float: left;
+    color: #999999;
+     
+}
+.seat-percent
+{
+    width: 25%;
+    float: right;
+    text-align:right;
+    color: #333333;
+}
+.revenue-percent {
+    width: 25%;
+    float: right;
+    text-align:right;
+    color: #999999;
+}
+    .memLogo {
+        float:left;
+        margin-right:5px;
+    }
+
+/*  end copy */

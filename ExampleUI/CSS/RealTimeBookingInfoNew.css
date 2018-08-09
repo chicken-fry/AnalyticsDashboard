@@ -1,0 +1,325 @@
+﻿* {
+    outline: 0;
+}
+
+:after, :before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: EK03Plain-M01;
+    background: white !important;
+}
+
+body, html {
+    height: 100%;
+    width: 99.5%;
+    background-color: #fff;
+}
+
+.chart-container-expand {
+    width: 99vw !important;
+    height: 84vh !important;
+}
+
+.chart-container-collapse {
+    width: 58vw;
+    float: left;
+    height: 55vh;
+}
+
+.map-marker {
+    /* adjusting for the marker dimensions
+        so that it is centered on coordinates */
+    margin-left: -12px;
+    margin-top: -22px;
+}
+
+#mainTable {
+    width: 100%;
+}
+
+.wrapper {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.wrapper1 {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.brand-name {
+    width: 65px;
+    height: 90px;
+    float: left;
+    background-image: url("/Images/logo.png");
+}
+
+.app-name {
+    font-size: 2.5em;
+    color: #333333;
+    float: left;
+    margin: 20px 0 0 20px;
+}
+
+.label-web {
+    font-family: arial;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.data-header {
+    background: #53a7bf;
+    color: #fff;
+    padding: 0px 2px 0px 2px;
+}
+
+.data-row {
+    width: 99.5%;
+    background: #f5f5f5;
+    border: solid #dfdfdf;
+    border-width: 0px 1px 0px 1px;
+    float: left;
+}
+
+.data-row-last {
+    width: 99.5%;
+    background: #f5f5f5;
+    border: solid #dfdfdf;
+    border-width: 0px 1px 1px 1px !important;
+    float: left;
+}
+
+.expand-seat {
+    width: 30% !important;
+}
+
+.hide-revenue {
+    width: 43.7% !important;
+}
+
+.expand-topten-seat {
+    width: 25% !important;
+}
+
+.hide-topten-revenue {
+    width: 35% !important;
+}
+
+.header-title {
+    display: inline;
+    float: left;
+    width: 24%;
+    padding-left: 2px;
+}
+
+.topten-title {
+    display: inline;
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.topten-data-title {
+    display: inline;
+    float: left;
+    width: 39%;
+    padding-left: 2px;
+}
+
+
+.topten-seats {
+    display: inline;
+    float: left;
+    width: 10%;
+    text-align: right;
+}
+
+.topten-seats-percent {
+    display: inline;
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+.topten-revenue {
+    display: inline;
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+
+.topten-revenue-percent {
+    display: inline;
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+.header-seats {
+    display: inline;
+    float: left;
+    width: 15%;
+    text-align: right;
+    padding-left: 2px;
+}
+
+.header-seat-percent {
+    display: inline;
+    width: 15%;
+    float: left;
+    text-align: right;
+    padding-left: 2px;
+}
+
+.header-revenue {
+    display: inline;
+    width: 22%;
+    float: left;
+    text-align: right;
+    padding-left: 2px;
+}
+
+.header-revenue-percent {
+    display: inline;
+    width: 19%;
+    float: left;
+    text-align: right;
+    padding-left: 2px;
+    padding-right: 9px;
+}
+
+.travel-month-header {
+    display: inline;
+    float: left;
+    width: 40%;
+    margin-left: 5px;
+}
+
+.travel-month-seats {
+    display: inline;
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+
+.travel-month-seats-percent {
+    display: inline;
+    float: right;
+    width: 25%;
+    text-align: right;
+    margin-right: 2px;
+}
+
+.data-info2 {
+    width: 60%;
+    float: left;
+    margin-top: 10px;
+}
+
+.topten-header {
+    width: 60%;
+    float: left;
+    /*margin-top: 10px;*/
+}
+
+.data-info_wo_revenue .topten-header {
+    width: 50%;
+}
+
+.data-info_wo_revenue .topten-seats {
+    display: inline;
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+
+.data-info_wo_revenue .overall-summary .data-header {
+    width:97.7% !important;
+}
+
+.data-info_wo_revenue .topten-seats-percent {
+    display: inline;
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+
+.data-info_wo_revenue .data-info2 {
+    padding-left: 5vw;
+    width: 50vw;
+}
+
+.data-info_wo_revenue .data-info1 .data-row {
+    width: 98%;
+    background: #f5f5f5;
+    border: solid #dfdfdf;
+    border-width: 0px 1px 0px 1px;
+    float:left;
+}
+
+.data-info_wo_revenue .data-info1 .data-row-last {
+    width: 98%;
+    background: #f5f5f5;
+    border: solid #dfdfdf;
+    border-width: 0px 1px 1px 1px !important;
+    float:left;
+}
+
+.data-info_wo_revenue .data-info2 #dvTopTenRow {
+    width: 50.2% !important;
+}
+
+.data-info_wo_revenue .data-info2 .data-container {
+    width: 40.5% !important;
+}
+
+.data-info_wo_revenue .monthsplit-header {
+    width: 40% !important;
+    float: right;
+    margin-right: 10px;
+}
+
+.data-info1 {
+    width: 40%;
+    float: right;
+    margin-top: 10px;
+}
+
+.data-info_wo_revenue .data-info1 {
+    width: 25%;
+    float: right;
+    margin-top: 10px;
+}
+
+.data-info_wo_revenue .header-title {
+    width: 40%;
+}
+
+.data-info_wo_revenue .header-seat-percent {
+    width: 25%;
+}
+
+.data-info_wo_revenue .header-seats {
+    width: 30%;
+}
+
+.data-info_wo_revenue .chart-container-collapse {
+    width: 70vw;
+    float: left;
+    height: 55vh;
+}
+
+
+.clear {
+    clear: both;
+}
